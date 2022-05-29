@@ -1,0 +1,54 @@
+import React, { useEffect, useState } from 'react';
+
+
+function LastUser() {
+
+
+    const [LastUser,setLastUser] = useState([]);
+
+    useEffect(function() {
+
+        fetch('http://localhost:3001/user/listing')
+        .then(function(users) {
+            return users.json()
+        })
+        .then(function(users) {
+            let data = users.data;
+            setLastUser(data[data.length-1])
+        })
+    },[])
+
+
+    return (
+
+        < div className="col-lg-6 mb-4" >
+            <div className="card shadow mb-4">
+                <div className="card-header py-3">
+                    <h6 className="m-0 font-weight-bold text-primary">ULTIMO USUARIO EN BASE DE DATOS</h6>
+                </div>
+                <div className="card-header py-3">
+                    <h6 className="m-0 font-weight-bold text-primary">Name : {LastUser.name} {LastUser.last_name}</h6>
+                </div>
+                <div className="card-header py-3">
+                    <h6 className="m-0 font-weight-bold text-primary">Email : {LastUser.email}</h6>
+                </div>
+                <div className="card-header py-3">
+                    <h6 className="m-0 font-weight-bold text-primary">Phone Number : {LastUser.phone_number}</h6>
+                </div>
+                <div className="card-header py-3">
+                    <h6 className="m-0 font-weight-bold text-primary">Driver Licence: {LastUser.driver_licence}</h6>
+                </div>
+                <div className="card-header py-3">
+                    <h6 className="m-0 font-weight-bold text-primary">Promo code: {LastUser.promo_code}</h6>
+                </div>
+                
+            </div>
+        </div >
+
+
+    )
+
+}
+
+
+export default LastUser;
