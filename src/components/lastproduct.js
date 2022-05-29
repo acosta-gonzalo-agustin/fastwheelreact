@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
   
   
   function traerDatos(){
-    fetch("http://localhost:3001/product/list")
+    fetch("https://fastwheel.herokuapp.com/product/list")
     .then(response => response.json() )
     .then(function(list) {
         let vehicles = list.data;

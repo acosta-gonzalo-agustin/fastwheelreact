@@ -8,7 +8,7 @@ function LastUser() {
 
     useEffect(function() {
 
-        fetch('http://localhost:3001/user/listing')
+        fetch('https://fastwheel.herokuapp.com/user/listing')
         .then(function(users) {
             return users.json()
         })

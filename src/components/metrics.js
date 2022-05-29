@@ -19,9 +19,9 @@ function MainMetrics() {
 
 
             < div className="row" >
-                <Metric name='USUARIOS' url='http://localhost:3001/user/listing' />
-                <Metric name='CATEGORIAS' url='http://localhost:3001/product/categories' />
-                <Metric name='PRODUCTOS' url='http://localhost:3001/product/list' />
+                <Metric name='USUARIOS' url='https://fastwheel.herokuapp.com/user/listing'/>
+                <Metric name='CATEGORIAS' url='https://fastwheel.herokuapp.com/product/categories'/>
+                <Metric name='PRODUCTOS' url='https://fastwheel.herokuapp.com/product/list'/>
 
             </div >
 
