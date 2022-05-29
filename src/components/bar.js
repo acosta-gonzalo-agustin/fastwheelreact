@@ -56,7 +56,7 @@ function Bar() {
 
 				{/* <!-- Nav Item - Tables --> */}
 				<li className="nav-item active">
-					<a className="nav-link" href="http://localhost:3001/">
+					<a className="nav-link" href="https://fastwheel.herokuapp.com/">
 						<i className="fas fa-fw fa-table"></i>
 						<span>Aplicacion Web</span></a>
 				</li>
