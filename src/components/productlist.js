@@ -40,7 +40,7 @@ function ProductList() {
                                     <h6 className="m-0 font-weight-bold text-primary"> {vehicle.name}</h6>
                                 </div >
                                 <div className="text-center">
-                                    <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={require("../assets/img/1652462905843Camionetapickup.jpg")} alt="dummy" />
+                                    <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={require("https://fastwheel.herokuapp.com/public/img/img-autos/16519635327ll.jpg")} alt="dummy" />
                                 </div>
                                 <h6 className="m-0 font-weight-bold text-primary">Precio por dia: $ {vehicle.pricexday}</h6>
                                 <h6 className="m-0 font-weight-bold text-primary">Marca: {vehicle.brand.name}</h6>
