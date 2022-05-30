@@ -35,7 +35,7 @@ function LastUser() {
                     <h6 className="m-0 font-weight-bold text-primary">Name : {LastUser.name} {LastUser.last_name}</h6>
                 </div>
                 <div className="text-center">
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={img + LastUser.picture} alt="dummy" />
+                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={img + LastUser.profile_picture} alt="dummy" />
                     </div>
                 <div className="card-header py-3">
                     <h6 className="m-0 font-weight-bold text-primary">Email : {LastUser.email}</h6>
