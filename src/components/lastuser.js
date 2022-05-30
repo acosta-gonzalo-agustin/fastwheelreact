@@ -14,7 +14,6 @@ function LastUser() {
         })
         .then(function(users) {
             let data = users.data;
-            console.log(data);
             setLastUser(data[data.length-1])
         })
     },[])

@@ -48,12 +48,7 @@ function Bar() {
 					</Link>
 				</li>
 
-				{/* <!-- Nav Item - Tables --> */}
-				<li className="nav-item active">
-					<a className="nav-link" href="/">
-						<i className="fas fa-fw fa-table"></i>
-						<span>Tables</span></a>
-				</li>
+				
 
 				{/* <!-- Nav Item - Tables --> */}
 				<li className="nav-item active">

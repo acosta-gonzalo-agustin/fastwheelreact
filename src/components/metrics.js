@@ -3,6 +3,7 @@ import Metric from './metric';
 import LastProduct from './lastproduct';
 import Categories from './categories';
 import LastUser from './lastuser';
+import Maxvehicle from './maxvehicle';
 
 
 function MainMetrics() {
@@ -30,6 +31,10 @@ function MainMetrics() {
                 <LastProduct />
                 {/* <!-- Categories in DB --> */}
                 <Categories />
+
+                {/* <!-- Max Product DB --> */}
+                <Maxvehicle/>
+
                 {/* <!-- Last User in DB --> */}
                 <LastUser />
             </div >

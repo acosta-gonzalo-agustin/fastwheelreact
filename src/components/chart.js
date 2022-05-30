@@ -1,58 +1,78 @@
-import React from 'react';
-import {Bar} from 'react-chartjs-2'
+import React, { useMemo } from "react";
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend,
+    Filler,
+} from "chart.js";
+import { Bar } from "react-chartjs-2";
+
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend,
+    Filler
+);
+
+const scores = [6, 5, 5, 5, 3, 4, 6, 4, 5];
+const labels = [100, 200, 300, 400, 500, 600, 700];
+
+const options = {
+    fill: true,
+    animations: false,
+    scales: {
+        y: {
+            min: 0,
+        },
+    },
+    responsive: true,
+    plugins: {
+        legend: {
+            display: true,
+        },
+    },
+};
+
+export default function BarChart() {
+    const data = useMemo(function () {
+        return {
+            datasets: [
+                {
+                    label: "Mis datos",
+                    tension: 0.3,
+                    data: scores,
+                    borderColor: "rgb(75, 192, 192)",
+                    backgroundColor: "rgba(75, 192, 192, 0.3)",
+                },
+            ],
+            labels,
+        };
+    }, []);
 
 
-  
- function Chart() {
-
-
-    const data = {
-
-        labels: ['medianos','compactos','premium'],
-        
-        datasets: [{
-            label:'Categorias',
-            backgroundColor:'rgba(0,255,0,1)',
-            borderColor:'black',
-            borderWith:1,
-            hoverBackgroundColor:'rgba(0,255,0,0.2)',
-            hoverBorderColor:'#FF0000',
-            data: [5,6,10]
-        }]
-    }
-
-    const opciones = {
-        maintanAspectRatio: false,
-        responsive: true,
-    }
-
-    
 
     return (
 
 
         < div className="container-fluid" >
-
-
-
             < div className="d-sm-flex align-items-center justify-content-between mb-4" >
                 <h1 className="h3 mb-0 text-gray-800">LISTA DE VEHICULOS</h1>
             </div >
-
             <div className='lista-productos listado'>
-
-                    < div className="col-lg-6 mb-4" >
-                        <div className="card shadow mb-4">
-                            <div className="card-body">
-                                <Bar data = {data}  options = {opciones}/>
-                            </div>
-                        </div>
-                    </div >
+                <div className="App">
+                    <Bar data={data} options={options} />
+                </div>
             </div>
-        </div>   
-        
-    )
-}
-  
+        </div>
 
-export default Chart;
+    );
+}
