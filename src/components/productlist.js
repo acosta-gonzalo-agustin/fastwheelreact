@@ -17,7 +17,7 @@ function ProductList() {
     }, [])
 
 
-    let img = "https://fastwheel.herokuapp.com/public/img/img-autos/";
+    let img = "https://fastwheel.herokuapp.com/img/img-autos/";
 
     return (
 
