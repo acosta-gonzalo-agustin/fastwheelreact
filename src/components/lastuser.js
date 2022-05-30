@@ -14,6 +14,7 @@ function LastUser() {
         })
         .then(function(users) {
             let data = users.data;
+            console.log(data);
             setLastUser(data[data.length-1])
         })
     },[])
@@ -22,7 +23,10 @@ function LastUser() {
 
     return (
 
+        
+
         < div className="col-lg-6 mb-4" >
+
             <div className="card shadow mb-4">
                 <div className="card-header py-3">
                     <h6 className="m-0 font-weight-bold text-primary">ULTIMO USUARIO EN BASE DE DATOS</h6>
