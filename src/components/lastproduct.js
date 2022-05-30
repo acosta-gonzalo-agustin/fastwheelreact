@@ -19,8 +19,7 @@ import { useState, useEffect } from 'react';
   }
   
   useEffect( () => { 
-    traerDatos()
-    console.log(valoresEstado) 
+    traerDatos() 
   }, [] )   
 
 
