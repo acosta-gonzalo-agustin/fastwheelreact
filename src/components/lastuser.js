@@ -6,7 +6,7 @@ function LastUser() {
 
     const [LastUser,setLastUser] = useState([]);
 
-    useEffect(function() {
+    useEffect( function() {
 
         fetch('https://fastwheel.herokuapp.com/user/listing')
         .then(function(users) {
