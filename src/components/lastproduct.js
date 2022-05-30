@@ -26,7 +26,7 @@ import { useState, useEffect } from 'react';
 
   if (valoresEstado !== 0){
 
-
+    let img = "https://fastwheel.herokuapp.com/img/img-autos/";
 
     return (
 
@@ -37,7 +37,7 @@ import { useState, useEffect } from 'react';
                 </div>
                 <div className="card-body">
                     <div className="text-center">
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={require("../assets/img/1652462905843Camionetapickup.jpg")} alt="dummy" />
+                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={img + valoresEstado.picture} alt="dummy" />
                     </div>
                     <h6 className="m-0 font-weight-bold text-primary">{valoresEstado.name}</h6>
                     <h6 className="m-0 font-weight-bold text-primary">Precio por dia: ${valoresEstado.pricexday}</h6>
