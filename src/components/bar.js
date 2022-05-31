@@ -44,7 +44,7 @@ function Bar() {
 				<li className="nav-item active">
 					<a className="nav-link" href="https://fastwheel.herokuapp.com/">
 						<i className="fas fa-fw fa-table"></i>
-						<span>Aplicacion Web</span></a>
+						<span>Pagina web</span></a>
 				</li>
 
 			
