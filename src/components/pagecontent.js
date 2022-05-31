@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Routes } from 'react-router-dom';
 import MainMetrics from './metrics';
 import ProductList from './productlist';
-import Charts from './chart';
+
 
 
 
@@ -22,7 +22,6 @@ function Pagecontent() {
             <Routes>
                 <Route path="/" exact element={<MainMetrics/>} />
                 <Route path="/list"  element={<ProductList/>} />
-                <Route path="/charts" element={<Charts/>}/>
             </Routes>
         </div >
 

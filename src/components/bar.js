@@ -40,16 +40,6 @@ function Bar() {
 					</Link>
 				</li>
 
-				{/* <!-- Nav Item - Charts --> */}
-				<li className="nav-item active">
-					<Link className="nav-link" to="/charts">
-						<i className="fas fa-fw fa-chart-area"></i>
-						<span>Charts</span>
-					</Link>
-				</li>
-
-				
-
 				{/* <!-- Nav Item - Tables --> */}
 				<li className="nav-item active">
 					<a className="nav-link" href="https://fastwheel.herokuapp.com/">
