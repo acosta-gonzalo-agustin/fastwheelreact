@@ -42,7 +42,7 @@ function Bar() {
 
 				{/* <!-- Nav Item - Tables --> */}
 				<li className="nav-item active">
-					<a className="nav-link" href="https://fastwheel.herokuapp.com/">
+					<a className="nav-link" href="https://fast-wheel.onrender.com/">
 						<i className="fas fa-fw fa-table"></i>
 						<span>Pagina web</span></a>
 				</li>

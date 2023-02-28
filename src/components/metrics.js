@@ -20,9 +20,9 @@ function MainMetrics() {
 
 
             < div className="row" >
-                <Metric name='USUARIOS' url='https://fastwheel.herokuapp.com/user/listing'/>
-                <Metric name='CATEGORIAS' url='https://fastwheel.herokuapp.com/product/categories'/>
-                <Metric name='PRODUCTOS' url='https://fastwheel.herokuapp.com/product/list'/>
+                <Metric name='USUARIOS' url='https://fast-wheel.onrender.com/user/listing'/>
+                <Metric name='CATEGORIAS' url='https://fast-wheel.onrender.com/product/categories'/>
+                <Metric name='PRODUCTOS' url='https://fast-wheel.onrender.com/product/list'/>
 
             </div >
 

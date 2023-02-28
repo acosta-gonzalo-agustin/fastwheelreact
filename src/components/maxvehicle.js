@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
   
   
   function traerDatos(){
-    fetch("https://fastwheel.herokuapp.com/product/main_booking")
+    fetch("https://fast-wheel.onrender.com/product/main_booking")
     .then(response => response.json() )
     .then(function(max) {
         let vehicle = max.vehicle;
@@ -27,7 +27,7 @@ import { useState, useEffect } from 'react';
 
 
 
-    let img = "https://fastwheel.herokuapp.com/img/img-autos/";
+    let img = "https://fast-wheel.onrender.com/img/img-autos/";
 
     return (
 

@@ -6,7 +6,7 @@ function ProductList() {
 
     useEffect(function () {
 
-        fetch('https://fastwheel.herokuapp.com/product/list')
+        fetch('https://fast-wheel.onrender.com/product/list')
             .then(function (list) {
                 return list.json()
             })
