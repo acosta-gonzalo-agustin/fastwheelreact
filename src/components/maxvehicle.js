@@ -27,7 +27,7 @@ import { useState, useEffect } from 'react';
 
 
 
-    let img = "https://fast-wheel.onrender.com/img/img-autos/";
+ 
 
     return (
 
@@ -38,7 +38,7 @@ import { useState, useEffect } from 'react';
                 </div>
                 <div className="card-body">
                     <div className="text-center">
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={img + Max.picture} alt="dummy" />
+                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={Max.secure_url} alt="dummy" />
                     </div>
                     <h6 className="m-0 font-weight-bold text-primary">{Max.name}</h6>
                     <h6 className="m-0 font-weight-bold text-primary">Precio por dia: ${Max.pricexday}</h6>
